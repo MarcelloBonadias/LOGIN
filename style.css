@@ -19,6 +19,7 @@ body * {
     justify-content: center;
     align-items: center;
 }
+
 @keyframes main-login{
     0% {
         background-position: 0% 50%;
