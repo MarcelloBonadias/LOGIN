@@ -12,10 +12,24 @@ body * {
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: #201b2c;
+    background: linear-gradient(-45deg,#011e5c, #00eeff);
+    background-size: 220% 220%;
+    animation: main-login 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@keyframes main-login{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+
+        background-position: 100% 50%;
+    }   
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .left-login{
@@ -29,7 +43,7 @@ body * {
 }
 .left-login > h1 {
     font-size: 3vw;
-    color: #7fffd4;
+    color: #FFF;
     display: flex;
 }
 
@@ -52,13 +66,15 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2F2841;
+    background: linear-gradient(-45deg,#00eeff , #011e5c);
+    background-size: 220% 220%;
+    animation: main-login 10s ease infinite;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
 .card-login > h1 {
-    color: #00ff88;
+    color: #FFF;
     font-weight: 800;
     margin: 0;
 }
@@ -77,18 +93,39 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869 ;
-    color: #ffffff;
+    background: #FFF ;
+    color: #000000;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px #ffffff56;
     outline: none;
     box-sizing: border-box;
 }
 
 .textfield > label {
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
+}
+.Cadastrar{
+    font-size: 14px;
+    text-decoration: none;
+    text-decoration-color: #000000;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: linear-gradient(-45deg,#ffffff , #ffffff);
+    background-size: 220% 220%;
+    animation: cadastrar 10s ease infinite;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.CLICANDO-AQUI{
+    margin: auto;
+    color: #ffffff;
+    text-decoration: #00eeff;
 }
 
 .textfield > input ::placeholder{
@@ -103,10 +140,10 @@ body * {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    color: #011e5c;
+    background: #FFF;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #062d80;
 }
 
 @media only screen and (max-width: 950px){
